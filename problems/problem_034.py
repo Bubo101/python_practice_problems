@@ -19,7 +19,17 @@
 # in Python. You just use a comma with the return, like
 # this:
 #      return value1, value2
+# Function accepts a string "s" and determines how many letters or numbers are there
 
 
 def count_letters_and_digits(s):
-    pass
+    value1 = 0
+    value2 = 0
+    for character in s:
+        if character.isdigit():
+            value1 = value1 + 1
+        if character.isalpha():
+            value2 = value2 + 1
+    return value2, value1 
+
+print(count_letters_and_digits("Julie101"))

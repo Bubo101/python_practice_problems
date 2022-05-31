@@ -10,5 +10,22 @@
 #
 # If the list is empty, then return the empty string.
 
+# def remove_duplicate_letters(s):
+    # result = new empty string
+    # for every letter in the string s
+        # if the letter is not in the result
+            # add it to the end of the result
+    # return the result
+    #use .join on an array not a single letter 
+
 def remove_duplicate_letters(s):
-    pass
+    if len(s) == 0:
+        return s
+    result = ""
+    for letter in s:
+        if letter not in result:
+            result += letter
+    return result
+
+   
+print(remove_duplicate_letters("aabbccddee"))

@@ -15,5 +15,19 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+#Create funciton that gets first n even numbers
+    #if value of n is less than 0
+        #return none
+   
+
 def sum_of_first_n_even_numbers(n):
-    pass
+    if n < 0:
+        return None
+    sum = 0
+    i = 0
+    while i <= n:
+        sum = (2 * i) + sum
+        i = i + 1
+    return sum
+
+print(sum_of_first_n_even_numbers(5))

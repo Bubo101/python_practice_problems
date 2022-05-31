@@ -17,9 +17,19 @@
 #write a function that generates a list of 6 uique numbers between 1 and 40 inclusive
 #   it has NO parameters
 
+#randint range is INCLUSIVE, while loop needed because we don't know how many iterations it would take to get unique numbers
+
 import random
 
 def generate_lottery_numbers():
+    numbers = []
+    while len(numbers) < 6:
+        number = random.randint(1,40)
+        if number not in numbers:
+            numbers.append(number)
 
+    return numbers
 
 result = generate_lottery_numbers()
+
+print(result)

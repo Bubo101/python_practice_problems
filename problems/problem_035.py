@@ -24,4 +24,13 @@
 # at the last one you just wrote unless you really must.
 
 def count_letters_and_digits(s):
-    pass
+    value1 = 0
+    value2 = 0
+    for c in s:
+        if c.isdigit():
+            value1 = value1 + 1
+        if c.isalpha():
+            value2 = value2 + 1
+    return value2, value1
+
+print(count_letters_and_digits("boden1133"))
