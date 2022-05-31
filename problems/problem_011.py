@@ -4,8 +4,16 @@
 
 # Do some planning in ./planning.md
 
+#need to use % to divide and == 0 to set a remainder of 0
+#and return 'buzz' if true, otherweise return the number
+
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
 def is_divisible_by_5(number):
-    pass
+    if number % 5 == 0:
+        return 'buzz'
+    else:
+        return number
+
+print(is_divisible_by_5(12))

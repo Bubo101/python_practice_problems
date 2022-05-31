@@ -3,7 +3,7 @@
 #   x: the x coordinate to check
 #   y: the y coordinate to check
 #   rect_x: The left of a rectangle
-#   rect_y: The top of a rectangle
+#   rect_y: The bottom of a rectangle
 #   rect_width: The width of the rectangle
 #   rect_height: The height of the rectangle
 #
@@ -15,4 +15,8 @@
 #   * y is less than or equal to rect_y + rect_height
 
 def is_inside_bounds(x, y, rect_x, rect_y, rect_width, rect_height):
-    pass
+    if x >= rect_x and y >= rect_y and x<= (rect_x + rect_width) and y <= (rect_y + rect_height):
+        return True
+    else:
+        return False 
+

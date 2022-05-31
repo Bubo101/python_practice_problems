@@ -12,5 +12,21 @@
 # Write out some pseudocode before trying to solve the
 # problem to get a good feel for how to solve it.
 
+# WE are going to take the input of a words and see if it is spelled 
+# the same forwards and backwards.  Need to use the "reversed" funciton
+# and also join method 
+
+from operator import truediv
+
+
 def is_palindrome(word):
-    pass
+    reversed_letters = reversed(word)
+    reversed_word = "".join (reversed_letters)
+    if reversed_word == word:
+        return True
+    else:
+        return False
+
+word = "racecar"
+
+print(is_palindrome(word))

@@ -13,4 +13,11 @@
 # problem to get a good feel for how to solve it.
 
 def max_of_three(value1, value2, value3):
-    pass
+    if value1 > value2 and value1 > value3:
+        return value1
+    elif value2 > value1 and value2 > value3:
+        return value2
+    else:
+        return value3
+
+#condition:  compare value 1 or 2, then compare the larger against the last 

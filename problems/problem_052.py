@@ -14,4 +14,12 @@
 # package.
 #
 # https://docs.python.org/3/library/random.html
+#write a function that generates a list of 6 uique numbers between 1 and 40 inclusive
+#   it has NO parameters
 
+import random
+
+def generate_lottery_numbers():
+
+
+result = generate_lottery_numbers()
