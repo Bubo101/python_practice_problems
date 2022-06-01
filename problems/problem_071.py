@@ -23,6 +23,17 @@
 # Do it without pseudocode, this time, from memory. Don't look
 # at the last one you just wrote unless you really must.
 
+class Employee:
+    def __init__(self, first, last):
+        self.first = first
+        self.last = last
+    
+    def get_fullname(self):
+        return self.first + " " + self.last
+    def get_email(self):
+        return self.first.lower() + "." + self.last.lower() + "@gmail.com"
 
+emp = Employee ("Boden", "Bradley")
 
+print(emp.get_email(), emp.get_fullname())
 

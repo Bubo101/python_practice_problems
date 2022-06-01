@@ -35,3 +35,27 @@
             # return None
         # returns the sum of the scores divided by
         # the number of scores
+class Student:
+    def __init__(self, name):
+        self.name = name
+        self.scores = []
+
+    def add_score(self, score):
+        self.scores.append(score)
+
+    def get_average(self):
+        sum = 0
+        if not self.scores:
+            return None
+        for score in self.scores:
+            sum += score
+        return sum / len(self.scores)
+
+student = Student("Boden")
+
+print(student.get_average())    
+student.add_score(80)
+print(student.get_average())  
+student.add_score(90)
+student.add_score(82)
+print(student.get_average())   

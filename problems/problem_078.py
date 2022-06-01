@@ -20,5 +20,14 @@
 
 import math
 
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+    def calc_perim(self):
+        return 2 * math.pi * self.radius
+    def calc_area(self):
+        return math.pi * (self.radius * self.radius)
 
+cir = Circle (5)
 
+print(cir.calc_area(), cir.calc_perim())

@@ -15,3 +15,17 @@
 #    print(item.get_total())    # Prints 34.5
 
 
+from os import PRIO_PROCESS
+
+
+class ReceiptItem:
+    def __init__(self, quantity, price):
+        self.quantity = quantity
+        self.price = price
+
+    def get_total(self):
+        return self.quantity * self.price
+
+item = ReceiptItem (10,34)
+
+print(item.get_total())

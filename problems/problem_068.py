@@ -37,3 +37,19 @@
             # return True
         # otherwise
             # return None
+class Person:
+    def __init__(self, name, hated_foods_list, loved_foods_list):
+        self.name = name
+        self.hated_foods_list = hated_foods_list
+        self.loved_foods_list = loved_foods_list
+
+    def taste(self, food):
+        if food in self.hated_foods_list:
+            return False 
+        elif food in self.loved_foods_list:
+            return True
+        else:
+            return None 
+
+foods = Person ("Boden", ["cale", "yogurt", "carrot"], ["ice cream", "pizza", "snow"])
+print(foods.taste("ice cream"), foods.taste("cale"))
