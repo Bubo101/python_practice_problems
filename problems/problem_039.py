@@ -13,4 +13,14 @@
 #     output: {1: "one", 2: "two", 3: "three"}
 
 def reverse_dictionary(dictionary):
-    pass
+    new_dictionary = {}
+    for key, value in dictionary.items():
+        #grabbing the key and the value
+        new_dictionary[value] = key
+        #set the value to the key
+    return new_dictionary
+
+
+
+
+print(reverse_dictionary({"booty":"1","shark":"2","plantain":"3"}))

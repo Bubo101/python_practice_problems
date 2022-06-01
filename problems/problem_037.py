@@ -23,5 +23,12 @@
 #     pad:    " "
 #     result: "   19"
 
+#pad left function has 3 parameters: number, length, pad, and adds them into a string by adding padding character to left
+    #create result variable
+
 def pad_left(number, length, pad):
-    pass
+    s = str(number)
+    while len(s) < length:
+        s = pad + s
+    return s
+print(pad_left(8,8, "*"))

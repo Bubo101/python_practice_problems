@@ -19,6 +19,16 @@
 # split a string into pieces.
 
 # Write out your own pseudocode to help guide you.
+#
 
 def add_csv_lines(csv_lines):
-    pass
+    new_list = []
+    for string in csv_lines:
+        split_list = string.split(",")
+        sum = 0
+        for item in split_list:
+            sum += int(item)
+        new_list.append(sum)
+    return new_list
+
+print(add_csv_lines(["8,1,7", "10,10,10", "1,2,3"]))

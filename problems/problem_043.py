@@ -18,6 +18,16 @@
 #     result:       [0, 2, 4]
 #
 # Look up the enumerate function to help you with this problem.
+# funciton find indexes with parameters search list and search term
+    #
 
 def find_indexes(search_list, search_term):
-    pass
+    new_list =[]
+    search_enumer_list = enumerate(search_list)
+    for a,b in search_enumer_list:
+        if b == search_term:
+            new_list.append(a)
+    return new_list
+        
+print(find_indexes([1, 2, 1, 2, 1], 1))
+
