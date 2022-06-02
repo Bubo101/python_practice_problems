@@ -13,3 +13,13 @@
 #     * input:   [1, 3, 5, 7]
 #       returns: [1, 3, 5, 7]
 
+def only_odds(l):
+    odd_list = []
+    for n in l:
+        if n % 2 == 1:
+            odd_list.append(n)
+    
+    return odd_list
+
+
+print(only_odds([1,2,3,4,5,6]))

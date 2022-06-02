@@ -20,5 +20,30 @@
 #     * input:   ["Cleveland, OH", "Columbus, OH", "Chicago, IL"]
 #       returns: {"OH": ["Cleveland", "Columbus"], "IL": ["Chicago"]}
 #
-# You may want to look up the ".strip()" method for the string.
+# You may want to look up the ".strip()" method for the string. This has an optional paramater that will pass strip and contain characters you want to strip to
 
+#other sln
+# def group_cities_by_state(cities):
+#     cities_and_states = {}
+
+#     for each in cities:
+#         key = each.split(", ")[1]
+#         value = each.split (", ")[0]
+#         if key not in cities_and_states:
+#             cities_and_states[key]=[value]
+#         else:
+#             cities_and_states[key].append(value)
+#     return cities_and_states
+# print(group_cities_by_state(["Cleveland, OH", "Columbus, OH", "Chicago, IL"]))
+
+
+def group_cities_by_state(cities):          # solution
+    output = {}                             # solution
+    for city in cities:                     # solution
+        name, state = city.split(",")       # solution
+        state = state.strip()               # solution
+        if state not in output:             # solution
+            output[state] = []              # solution
+        output[state].append(name)          # solution
+    return output                           # solution
+print(group_cities_by_state(["Cleveland, OH", "Columbus, OH", "Chicago, IL"]))

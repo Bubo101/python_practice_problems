@@ -11,7 +11,7 @@
 #     * input:   2
 #       returns: 1/2 + 2/3
 #     * input:   3
-#       returns: 1/2 + 2/3 + 3/4
+#       returns: 1/2 + 2/3 + 3/4 in decimal answer
 #return sum of fractions
 
 def sum_fraction_sequence(n):
@@ -21,5 +21,5 @@ def sum_fraction_sequence(n):
         sum += i / (i + 1)
     return sum
 
-print(sum_fraction_sequence(3))
+print(sum_fraction_sequence(5))
 

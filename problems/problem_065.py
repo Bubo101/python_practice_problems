@@ -17,3 +17,13 @@
 #
 # You may want to look at the built-in "abs" function
 
+def biggest_gap(l):
+    diff = 0
+    if len(l) < 2:
+        return "Invalid List Length"
+    for num in l:
+        if abs(num - diff) > diff:
+            diff = abs(num - diff)
+    return diff
+
+print(biggest_gap([1,3,100,27,2]))

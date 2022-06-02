@@ -15,3 +15,12 @@
 #    * input:   "raise"
 #      RAISES:  ValueError
 
+def check_input(value1):
+    if value1 == "raise":
+        raise ValueError
+    else:
+        return value1
+
+print(check_input("this is a string"))
+
+# print(check_input("raise"))

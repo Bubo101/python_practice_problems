@@ -12,3 +12,13 @@
 #    * input: [1, 2, 3]
 #      result: [1, 2], [3]
 
+import math
+
+def halve_the_list(list1):
+    half_list_length = math.ceil(len(list1)/2)
+    print(int(half_list_length))
+    first_list = list1[:int(half_list_length)]
+    second_list = list1[int(half_list_length):]
+    return first_list, second_list
+
+print(halve_the_list([1,2,3,4,5]))

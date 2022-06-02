@@ -21,3 +21,12 @@
 # You may want to look at the built-in Python functions
 # "ord" and "chr" for this problem
 
+def shift_letters(word):
+    next_letter = ""
+    for l in word:
+        new = chr(ord(l)+ 1)
+        next_letter = next_letter + new
+
+    return next_letter
+
+print(shift_letters("Boden"))
